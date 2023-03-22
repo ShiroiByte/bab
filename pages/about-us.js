@@ -5,7 +5,7 @@ import Space from "@/components/Space"
 import Image from "next/image"
 import logo from '../public/logo.jpg'
 
-function aboutus() {
+function Aboutus() {
   return (
     
     <div className="tst">
@@ -22,4 +22,4 @@ function aboutus() {
   )
 }
 
-export default aboutus
+export default Aboutus

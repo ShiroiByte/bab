@@ -1,7 +1,7 @@
 import GetFont from "@/components/GetFont"
 import Header from "@/components/Header"
 
-function contact() {
+function Contact() {
   return (
     <div>
       <GetFont/>
@@ -10,4 +10,4 @@ function contact() {
   )
 }
 
-export default contact
+export default Contact

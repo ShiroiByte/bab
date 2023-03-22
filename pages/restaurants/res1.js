@@ -12,7 +12,7 @@ import Table from "@/components/Table";
 import TwoTable from "@/components/TwoTable";
 
 
-const res1 = () => {
+const Res1 = () => {
   const objID = "The Gourmet Kitchen";
   let formatType = "";
   const [format, setFormat] = useState([]);
@@ -136,4 +136,4 @@ const res1 = () => {
 }
 
 
-export default res1
+export default Res1

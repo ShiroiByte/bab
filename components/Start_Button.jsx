@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Link from 'next/link'
 function Start_Button() {
   return (
     
-    <div className='Button'>
-      <a href="/destination">Let's get booking</a>
+    <div className="Button">
+      <Link href="/destination">Lets get booking</Link>
     </div>
   )
 }

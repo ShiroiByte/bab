@@ -8,9 +8,9 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 
-function destination() {
-
+function Destination() {
   const [restaurants, setRestaurants] = useState([]);
+  
   let count = 1
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function destination() {
         <Space />
         <LeftText text={"Pick your desired location"} />
         {restaurants.map((restaurant) => (
-          <RestaurantClickable url={"restaurants/res"+count++} name={restaurant.name}/>
+          <RestaurantClickable key={restaurant.name} url={"restaurants/res"+count++} name={restaurant.name}/>
         ))}
       </div>
         
@@ -47,4 +47,4 @@ function destination() {
   
 }
 
-export default destination;
+export default Destination;

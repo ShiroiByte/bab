@@ -1,6 +1,6 @@
 import logo from '../public/logo.jpg'
 import Image from 'next/image'
-
+import Link from 'next/link'
 const Header = () => {
   return (
 <div className="header_div">
@@ -9,8 +9,8 @@ const Header = () => {
         <h1 className='text'>Book-a-Bite</h1>
     </div>
     <div className='links'>
-    <a href="/contact">Contact</a>
-    <a href="/about-us" className='move30'>About us</a>
+    <Link href={"/contact"}>Contact</Link>
+    <Link href={"/about-us"} className="move30">About us</Link>
     </div>
 
 </div>
