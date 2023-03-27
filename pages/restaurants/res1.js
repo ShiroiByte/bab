@@ -36,7 +36,7 @@ const Res1 = () => {
     };
 
     fetchFormat();
-  });
+  },[]);
 
   const determineFormat = () => {
     switch (format[0]) {
