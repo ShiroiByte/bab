@@ -4,6 +4,8 @@ import { useRouter } from "next/router"
 import { query, collection } from "firebase/firestore";
 import { db } from "@/utils/firebase";
 import { orderBy,limit,getDocs } from "firebase/firestore";
+import LeftText from "@/components/LeftText";
+import Space from "@/components/Space";
 const Receipt = () => {
   const router = useRouter();
   const RAWdata = router.query;
@@ -46,12 +48,22 @@ const Receipt = () => {
     <div>
       <Header/>
       <GetFont/>
-      <h1>{name}</h1>
-      <h1>{surname}</h1>
+      <Space/>
+      <LeftText text={"Information about your reservation:"}/>
+      <div className="leftText">
+      <br/>
+      <h2>Name and surname:</h2>
+      <h1>{name} {surname}</h1>
+      <br/>
+      <h2>Date:</h2>
       <h1>{date}</h1>
+      <br/>
+      <h2>Location:</h2>
       <h1 id="resname"></h1>
+      <br/>
+      <h2>Table space:</h2>
       <h1 id="tablecount"></h1>
-
+      </div>
     </div>
   )
 }
