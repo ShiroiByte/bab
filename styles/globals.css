@@ -96,7 +96,7 @@ a {
   margin-top: 30px;
 }
 
-.table{
+.table {
   background-color: #e6e6e6;
   display: inline-flex;
   width: auto;
@@ -105,7 +105,6 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 20px;
-  
 }
 
 .table a {
@@ -113,7 +112,7 @@ a {
   margin-top: 30px;
 }
 
-.eightTable{
+.eightTable {
   background-color: #e6e6e6;
   display: inline-flex;
   width: auto;
@@ -122,29 +121,27 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 0px;
-  
 }
 
 .eightTable a {
   margin: 20px;
   margin-top: 150px;
-  
 }
 
-.table_layout1{
+.table_layout1 {
   margin-top: 50px;
   display: flex;
 }
 
-.fourtable{
+.fourtable {
   width: 40vw;
 }
 
-.fourtable div{
+.fourtable div {
   margin-top: 30px;
 }
 
-.twoTable{
+.twoTable {
   background-color: #e6e6e6;
   display: inline-flex;
   width: auto;
@@ -158,17 +155,59 @@ a {
 .twoTable a {
   margin: 10px;
   margin-top: 34px;
-  
 }
 
-.twotable{
+.twotable {
   width: 30vw;
 }
 
-.twotable div{
+.twotable div {
   margin-top: 3vh;
 }
 
-.tst {
- margin-right: 50px;
+
+
+.confirm {
+  background-color: #e6e6e6;
+  display: inline-flex;
+  width: auto;
+  height: 15vh;
+  font-size: 2.8vw;
+  border-radius: 50px;
+  margin-left: 25vw;
+  margin-top: 20px;
+}
+
+.confirm button {
+  background-color: transparent;
+  box-shadow: 0;
+  border: 0;
+  font-size: x-large;
+  width: 140px;
+  height: 80px;
+  margin-top: 30px;
+}
+
+input{
+  margin-left: 3vw;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.back{
+  background-color: #e6e6e6;
+  display: inline-flex;
+  width: auto;
+  height: 15vh;
+  font-size: 2.8vw;
+  border-radius: 50px;
+  margin-left: 29vw;
+  margin-top: 20px;
+}
+
+.back a {
+  text-align: center;
+  font-size: x-large;
+  width: 140px;
+  margin-top: 50px;
 }
