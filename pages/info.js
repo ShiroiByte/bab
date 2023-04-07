@@ -32,7 +32,7 @@ const info = () => {
         <br />
         <br />
         <Back text={"Go back"} url={"/destination"}></Back>
-        <Confirm text={"Finish"}></Confirm>
+        <Confirm text={"Continue"}></Confirm>
       </form>
 
       <br />
