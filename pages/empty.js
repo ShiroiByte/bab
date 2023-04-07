@@ -13,7 +13,7 @@ const Empty = () => {
       <center>
         <Space />
         <h1>
-          Sorry but it seems like you haven't entered your name,surname or date,
+          Sorry but it seems like you havent entered your name,surname or date,
           please correct your information
         </h1>
         <h1>(the site will redirect you back automatically)</h1>
