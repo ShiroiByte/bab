@@ -39,15 +39,15 @@ const CheckTable = () => {
   function checkValidity1(){
     if(isValid){
       router.push({
-        pathname: "../events/reserveTable",
+        pathname: "../events/load",
         query:{id:`${id}`,name:`${name}`} 
       })
  
 
     }
   }
-  checkValidity1()
-  checkValidity2()
+  const timeout1 = setTimeout(checkValidity1,1000);
+  const timeout2 = setTimeout(checkValidity2,1000);
    
   console.log(meas)
 
