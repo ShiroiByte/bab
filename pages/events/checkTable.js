@@ -47,10 +47,9 @@ const CheckTable = () => {
     }
   }
 
-  const timeout2 = setTimeout(checkValidity2,1000);
-  const timeout1 = setTimeout(checkValidity1,2000);
+  checkValidity2()
+  const timeout1 = setTimeout(checkValidity1,100);
    
-  console.log(meas)
 
 
 
