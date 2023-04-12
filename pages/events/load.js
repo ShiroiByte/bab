@@ -12,7 +12,7 @@ const Load = () => {
       query: { id: `${id}`, name: `${name}` },
     });
   }
-  const timeout1 = setTimeout(checkValidity1, 3000);
+  const timeout1 = setTimeout(checkValidity1, 2000);
 
   return (
     <div>
