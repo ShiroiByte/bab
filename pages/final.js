@@ -7,7 +7,7 @@ import { useQRCode } from "next-qrcode";
 import Back from "@/components/Back";
 import LeftText from "@/components/LeftText";
 const Final = () => {
-    const { Canvas } = useQRCode();
+  const { Canvas } = useQRCode();
   const [latestDocument, setLatestDocument] = useState(null);
   useEffect(() => {
     async function fetchLatestDocument() {
@@ -32,12 +32,12 @@ const Final = () => {
         <h1>Please show this to the waiter</h1>
         <Space />
         <h2>{latestDocument}</h2>
-        <Space/>
+        <Space />
         <Canvas text={latestDocument || "Error"}></Canvas>
-        <Space/>
+        <Space />
       </center>
-      <LeftText/>
-      <Back text={"Go back"} url={"/"}/>
+      <LeftText />
+      <Back text={"Go back"} url={"/"} />
     </div>
   );
 };
