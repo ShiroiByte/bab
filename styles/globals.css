@@ -4,6 +4,24 @@
   margin: 0;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hovers {
+  from {
+    background-color: #e6e6e6;
+  }
+  to {
+    background-color: #c7c4c4;
+  }
+}
+
 .title {
   background-color: #ff9f5a;
   display: inline-block;
@@ -13,17 +31,23 @@
   height: 9vh;
   font-size: 1.3vw;
   margin-left: 115px;
+
 }
 
 .header_div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .text {
   text-align: center;
   margin-top: 1vw;
+  
 }
 
 a {
@@ -36,10 +60,19 @@ a {
   margin-left: 15px;
 }
 
+.logo:hover{
+  cursor: pointer;
+}
+
 .links {
   margin-top: 20px;
   margin-right: 60px;
   font-size: 1.3vw;
+}
+
+.links:hover{
+  transform: scale(1.1);
+  transition: 1s ease-out;
 }
 
 .move30 {
@@ -53,6 +86,10 @@ a {
 .Welcome {
   font-size: 1.8vw;
   text-align: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .Button {
@@ -62,6 +99,17 @@ a {
   height: 20vh;
   font-size: 3vw;
   border-radius: 50px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.Button:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
 }
 
 .Button a {
@@ -74,10 +122,18 @@ a {
 
 .entertext {
   font-size: 3vw;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .leftText {
   margin-left: 3vw;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .resName {
@@ -89,6 +145,10 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 50px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .resName a {
@@ -105,6 +165,14 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 20px;
+  
+}
+
+.table:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
 }
 
 .table a {
@@ -123,6 +191,13 @@ a {
   margin-top: 0px;
 }
 
+.eightTable:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
+}
+
 .eightTable a {
   margin: 20px;
   margin-top: 150px;
@@ -131,6 +206,10 @@ a {
 .table_layout1 {
   margin-top: 50px;
   display: flex;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .fourtable {
@@ -150,6 +229,12 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 0px;
+}
+.twoTable:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
 }
 
 .twoTable a {
@@ -176,6 +261,17 @@ a {
   border-radius: 50px;
   margin-left: 25vw;
   margin-top: 20px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.confirm:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
 }
 
 .confirm button {
@@ -192,6 +288,10 @@ input{
   margin-left: 3vw;
   font-size: large;
   border-radius: 5px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .back{
@@ -203,6 +303,17 @@ input{
   border-radius: 50px;
   margin-left: 29vw;
   margin-top: 20px;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.back:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
 }
 
 .back a {
@@ -210,4 +321,10 @@ input{
   font-size: x-large;
   width: 140px;
   margin-top: 50px;
+}
+
+.nyan{
+  background-image: url("../public/nyan.gif");
+  width: 200px;
+  height: 200px;
 }

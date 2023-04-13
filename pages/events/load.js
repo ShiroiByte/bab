@@ -15,8 +15,10 @@ const Load = () => {
   const timeout1 = setTimeout(checkValidity1, 2000);
 
   return (
-    <div>
-      <h1>Loading</h1>
+    <div className="nyan">
+      <center>
+      <h1>Loading...</h1>
+      </center>
     </div>
   );
 };

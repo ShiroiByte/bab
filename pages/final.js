@@ -25,6 +25,8 @@ const Final = () => {
     fetchLatestDocument();
   }, []);
 
+  
+
   return (
     <div>
       <center>
@@ -34,7 +36,8 @@ const Final = () => {
         <h2>{latestDocument}</h2>
         <Space />
         <Canvas text={latestDocument || "Error"}></Canvas>
-        <Space />
+
+        <div className="nyan"></div>
       </center>
       <LeftText />
       <Back text={"Go back"} url={"/"} />

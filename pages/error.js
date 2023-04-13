@@ -17,6 +17,7 @@ const Empty = () => {
         </h1>
         <h1>(the site will redirect you back automatically)</h1>
         <Space />
+        <div className="nyan"></div>
       </center>
     </div>
   );
