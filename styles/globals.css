@@ -151,6 +151,13 @@ a {
   animation-fill-mode: forwards;
 }
 
+.resName:hover{
+  transition: 1s;
+  background-color: #c7c4c4;
+  cursor: pointer;
+
+}
+
 .resName a {
   margin: 20px;
   margin-top: 30px;

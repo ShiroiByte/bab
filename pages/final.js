@@ -37,7 +37,6 @@ const Final = () => {
         <Space />
         <Canvas text={latestDocument || "Error"}></Canvas>
 
-        <div className="nyan"></div>
       </center>
       <LeftText />
       <Back text={"Go back"} url={"/"} />
