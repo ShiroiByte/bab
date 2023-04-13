@@ -4,8 +4,8 @@ import LeftText from "@/components/LeftText";
 import Confirm from "@/components/Confirm";
 import Back from "@/components/Back";
 const info = () => {
-  const date = new Date;
-  const min = date.toISOString().substring(0,10);
+  const date = new Date();
+  const min = date.toISOString().substring(0, 10);
   return (
     <>
       <GetFont />

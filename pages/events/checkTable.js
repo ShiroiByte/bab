@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { collection,where,query,getDocs, limit } from "firebase/firestore";
+import { collection, where, query, getDocs, limit } from "firebase/firestore";
 import { db } from "@/utils/firebase";
 const CheckTable = () => {
   const router = useRouter();
@@ -27,37 +27,25 @@ const CheckTable = () => {
     fetchRequiredDoc();
   }, [name]);
 
-  function checkValidity2(){
-    if(!isValid){
-      router.push("../error")
-
-
-
+  function checkValidity2() {
+    if (!isValid) {
+      router.push("../error");
     }
   }
 
-  function checkValidity1(){
-    if(isValid){
+  function checkValidity1() {
+    if (isValid) {
       router.push({
         pathname: "../events/load",
-        query:{id:`${id}`,name:`${name}`} 
-      })
- 
-
+        query: { id: `${id}`, name: `${name}` },
+      });
     }
   }
 
-  checkValidity2()
-  const timeout1 = setTimeout(checkValidity1,100);
-   
+  checkValidity2();
+  const timeout1 = setTimeout(checkValidity1, 100);
 
-
-
-
-
-  return <div>
-    {isValid}
-  </div>;
+  return <div>{isValid}</div>;
 };
 
 export default CheckTable;

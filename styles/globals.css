@@ -31,7 +31,6 @@
   height: 9vh;
   font-size: 1.3vw;
   margin-left: 115px;
-
 }
 
 .header_div {
@@ -47,7 +46,6 @@
 .text {
   text-align: center;
   margin-top: 1vw;
-  
 }
 
 a {
@@ -60,7 +58,7 @@ a {
   margin-left: 15px;
 }
 
-.logo:hover{
+.logo:hover {
   cursor: pointer;
 }
 
@@ -70,7 +68,7 @@ a {
   font-size: 1.3vw;
 }
 
-.links:hover{
+.links:hover {
   transform: scale(1.1);
   transition: 1s ease-out;
 }
@@ -105,11 +103,10 @@ a {
   animation-fill-mode: forwards;
 }
 
-.Button:hover{
+.Button:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .Button a {
@@ -151,11 +148,10 @@ a {
   animation-fill-mode: forwards;
 }
 
-.resName:hover{
+.resName:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .resName a {
@@ -172,14 +168,12 @@ a {
   border-radius: 50px;
   margin-left: 70px;
   margin-top: 20px;
-  
 }
 
-.table:hover{
+.table:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .table a {
@@ -198,11 +192,10 @@ a {
   margin-top: 0px;
 }
 
-.eightTable:hover{
+.eightTable:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .eightTable a {
@@ -237,11 +230,10 @@ a {
   margin-left: 70px;
   margin-top: 0px;
 }
-.twoTable:hover{
+.twoTable:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .twoTable a {
@@ -256,8 +248,6 @@ a {
 .twotable div {
   margin-top: 3vh;
 }
-
-
 
 .confirm {
   background-color: #e6e6e6;
@@ -274,11 +264,10 @@ a {
   animation-fill-mode: forwards;
 }
 
-.confirm:hover{
+.confirm:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .confirm button {
@@ -291,7 +280,7 @@ a {
   margin-top: 30px;
 }
 
-input{
+input {
   margin-left: 3vw;
   font-size: large;
   border-radius: 5px;
@@ -301,7 +290,7 @@ input{
   animation-fill-mode: forwards;
 }
 
-.back{
+.back {
   background-color: #e6e6e6;
   display: inline-flex;
   width: auto;
@@ -316,11 +305,10 @@ input{
   animation-fill-mode: forwards;
 }
 
-.back:hover{
+.back:hover {
   transition: 1s;
   background-color: #c7c4c4;
   cursor: pointer;
-
 }
 
 .back a {
@@ -330,7 +318,7 @@ input{
   margin-top: 50px;
 }
 
-.nyan{
+.nyan {
   background-image: url("../public/nyan.gif");
   width: 200px;
   height: 200px;

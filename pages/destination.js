@@ -10,8 +10,8 @@ import { collection, getDocs } from "firebase/firestore";
 
 function Destination() {
   const [restaurants, setRestaurants] = useState([]);
-  
-  let count = 1
+
+  let count = 1;
 
   useEffect(() => {
     const fetchRestaurants = async () => {
@@ -37,14 +37,15 @@ function Destination() {
         <Space />
         <LeftText text={"Pick your desired location"} />
         {restaurants.map((restaurant) => (
-          <RestaurantClickable key={restaurant.name} url={"restaurants/res"+count++} name={restaurant.name}/>
+          <RestaurantClickable
+            key={restaurant.name}
+            url={"restaurants/res" + count++}
+            name={restaurant.name}
+          />
         ))}
       </div>
-        
-        
     </>
   );
-  
 }
 
 export default Destination;

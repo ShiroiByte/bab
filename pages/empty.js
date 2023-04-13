@@ -4,9 +4,9 @@ import { useRouter } from "next/router";
 const Empty = () => {
   const router = useRouter();
   function goBack() {
-    router.push("/info")
+    router.push("/info");
   }
-  const timeout = setTimeout(goBack,5000);
+  const timeout = setTimeout(goBack, 5000);
   return (
     <div>
       <GetFont />

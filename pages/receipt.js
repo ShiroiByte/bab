@@ -7,56 +7,53 @@ import { orderBy, limit, getDocs } from "firebase/firestore";
 import LeftText from "@/components/LeftText";
 import Space from "@/components/Space";
 import Back from "@/components/Back";
-import Finish from "@/components/Finish"
+import Finish from "@/components/Finish";
 const Receipt = () => {
   const router = useRouter();
   const RAWdata = router.query;
   let name = RAWdata["Name"];
   let surname = RAWdata["Surname"];
   let date = RAWdata["Date"];
-  if (name != "" && surname!="" && date!="") {
-    
- 
-  const myCollectionRef = collection(db, "receipt");
-  const latestEntryQuery = query(
-    myCollectionRef,
-    orderBy("time", "desc"),
-    limit(1)
-  );
+  if (name != "" && surname != "" && date != "") {
+    const myCollectionRef = collection(db, "receipt");
+    const latestEntryQuery = query(
+      myCollectionRef,
+      orderBy("time", "desc"),
+      limit(1)
+    );
 
-  getDocs(latestEntryQuery)
-    .then((querySnapshot) => {
-      if (!querySnapshot.empty) {
-        const latestEntry = querySnapshot.docs[0].data();
-        const latestEntryGetName = latestEntry.name;
-        const latestEntryGetTable = latestEntry.id;
-        const latestEntryName = document.getElementById("resname");
-        const latestEntryTable = document.getElementById("tablecount");
-        latestEntryName.textContent = latestEntryGetName;
-        if (latestEntryGetTable / 20 == 1 || latestEntryGetTable / 21 == 1) {
-          latestEntryTable.textContent = "Two people";
+    getDocs(latestEntryQuery)
+      .then((querySnapshot) => {
+        if (!querySnapshot.empty) {
+          const latestEntry = querySnapshot.docs[0].data();
+          const latestEntryGetName = latestEntry.name;
+          const latestEntryGetTable = latestEntry.id;
+          const latestEntryName = document.getElementById("resname");
+          const latestEntryTable = document.getElementById("tablecount");
+          latestEntryName.textContent = latestEntryGetName;
+          if (latestEntryGetTable / 20 == 1 || latestEntryGetTable / 21 == 1) {
+            latestEntryTable.textContent = "Two people";
+          }
+          if (
+            latestEntryGetTable / 40 == 1 ||
+            latestEntryGetTable / 41 == 1 ||
+            latestEntryGetTable / 42 == 1 ||
+            latestEntryGetTable / 43 == 1
+          ) {
+            latestEntryTable.textContent = "Four people";
+          }
+          if (latestEntryGetTable / 80 == 1) {
+            latestEntryTable.textContent = "Eight people";
+          }
+        } else {
+          console.log("There are no entries in the collection.");
         }
-        if (
-          latestEntryGetTable / 40 == 1 ||
-          latestEntryGetTable / 41 == 1 ||
-          latestEntryGetTable / 42 == 1 ||
-          latestEntryGetTable / 43 == 1
-        ) {
-          latestEntryTable.textContent = "Four people";
-        }
-        if (latestEntryGetTable / 80 == 1) {
-          latestEntryTable.textContent = "Eight people";
-        }
-      } else {
-        console.log("There are no entries in the collection.");
-      }
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-  }
-  else{
-    router.push("/empty")
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  } else {
+    router.push("/empty");
   }
   return (
     <div>
@@ -82,7 +79,7 @@ const Receipt = () => {
       </div>
       <Back text={"Go back"} url={"/info"}></Back>
       <Finish text={"Finish"} url={"/final"}></Finish>
-    </div> 
+    </div>
   );
 };
 

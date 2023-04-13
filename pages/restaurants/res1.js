@@ -11,7 +11,6 @@ import Space from "@/components/Space";
 import Table from "@/components/Table";
 import TwoTable from "@/components/TwoTable";
 
-
 const Res1 = () => {
   const objID = "The Gourmet Kitchen";
   let formatType = "";
@@ -36,7 +35,7 @@ const Res1 = () => {
     };
 
     fetchFormat();
-  },[]);
+  }, []);
 
   const determineFormat = () => {
     switch (format[0]) {
@@ -63,17 +62,52 @@ const Res1 = () => {
         <center>
           <div className="table_layout1">
             <div className="fourtable">
-              <Table url={"/events/checkTable"} text={"4 people"} id={40} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={41} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={42} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={43} resName={objID} />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={40}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={41}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={42}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={43}
+                resName={objID}
+              />
             </div>
             <div className="eighttable">
-              <EightTable url={"/events/checkTable"} text={"8 people"} id={80} resName={objID} />
+              <EightTable
+                url={"/events/checkTable"}
+                text={"8 people"}
+                id={80}
+                resName={objID}
+              />
             </div>
             <div className="twotable">
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={20} resName={objID} />
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={21} resName={objID} />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={20}
+                resName={objID}
+              />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={21}
+                resName={objID}
+              />
             </div>
           </div>
         </center>
@@ -89,17 +123,52 @@ const Res1 = () => {
         <center>
           <div className="table_layout1">
             <div className="eighttable">
-              <EightTable url={"/events/checkTable"} text={"8 people"} id={80} resName={objID} />
+              <EightTable
+                url={"/events/checkTable"}
+                text={"8 people"}
+                id={80}
+                resName={objID}
+              />
             </div>
             <div className="twotable">
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={20} resName={objID} />
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={21} resName={objID} />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={20}
+                resName={objID}
+              />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={21}
+                resName={objID}
+              />
             </div>
             <div className="fourtable">
-              <Table url={"/events/checkTable"} text={"4 people"} id={40} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={41} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={42} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={43} resName={objID} />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={40}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={41}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={42}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={43}
+                resName={objID}
+              />
             </div>
           </div>
         </center>
@@ -116,24 +185,58 @@ const Res1 = () => {
         <center>
           <div className="table_layout1">
             <div className="twotable">
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={20} resName={objID} />
-              <TwoTable url={"/events/checkTable"} text={"2 people"} id={21} resName={objID} />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={20}
+                resName={objID}
+              />
+              <TwoTable
+                url={"/events/checkTable"}
+                text={"2 people"}
+                id={21}
+                resName={objID}
+              />
             </div>
             <div className="eighttable">
-              <EightTable url={"/events/checkTable"} text={"8 people"} id={80} resName={objID} />
+              <EightTable
+                url={"/events/checkTable"}
+                text={"8 people"}
+                id={80}
+                resName={objID}
+              />
             </div>
             <div className="fourtable">
-              <Table url={"/events/checkTable"} text={"4 people"} id={40} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={41} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={42} resName={objID} />
-              <Table url={"/events/checkTable"} text={"4 people"} id={43} resName={objID} />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={40}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={41}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={42}
+                resName={objID}
+              />
+              <Table
+                url={"/events/checkTable"}
+                text={"4 people"}
+                id={43}
+                resName={objID}
+              />
             </div>
           </div>
         </center>
       </div>
     );
   }
-}
+};
 
-
-export default Res1
+export default Res1;

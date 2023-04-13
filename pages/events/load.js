@@ -17,7 +17,7 @@ const Load = () => {
   return (
     <div className="nyan">
       <center>
-      <h1>Loading...</h1>
+        <h1>Loading...</h1>
       </center>
     </div>
   );
